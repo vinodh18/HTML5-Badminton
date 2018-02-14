@@ -29,9 +29,38 @@
 			<div class="row">
 				<div class="col-md-5">
 					<div class="site-logo">
-						<a href="index.html" class="brand">Darsh Badminton Academy</a>
+						<!-- <a href="index.html" class="brand">Darsh Badminton Academy</a> -->
+
+							<svg viewbox="-30 5 200 10" style=" overflow: VISIBLE;">
+							  <defs>
+							    <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+							      <stop offset="5%" stop-color="#326384"/>
+							      <stop offset="95%" stop-color="#123752"/>
+							    </linearGradient>
+							    <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
+							      <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
+							        <animateTransform
+							            attributeName="transform"
+							            begin="0s"
+							            dur="1.5s"
+							            type="translate"
+							            from="0,0"
+							            to="40,0"
+							            repeatCount="indefinite" />
+							      </path>
+							    </pattern>
+							  </defs>
+							  <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)"  fill-opacity="0.6">Darsh Badminton Academy</text>
+							  <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#gradient)" fill-opacity="0.1">Darsh Badminton Academy</text>
+							</svg>
+
+
 					</div>
 				</div>					  
+
+			
+
+
 
 				<div class="col-md-7">	 
 					<!-- Brand and toggle get grouped for better mobile display -->
@@ -69,7 +98,7 @@
 
 					<div class="carousel-inner">
 
-						<div class="item active">
+						<div class="item active" style="margin-top: -20px;">
 							<h1 style="    position: relative; text-align: center;
     color: #F77CAD;
     top: 108px;
@@ -79,7 +108,7 @@
 							<img src="images/slider/1.png" class="img-responsive" alt=""> 
 
 						</div>
-					  <!--  <div class="item">
+					   <div class="item">
 							<img src="images/slider/2.png" class="img-responsive" alt=""> 
 					   </div> 
 					   <div class="item">
@@ -90,7 +119,7 @@
 					   </div>
 					   <div class="item">
 							<img src="images/slider/5.png" class="img-responsive" alt=""> 
-					   </div> -->
+					   </div>
 					</div>
 					
 					<a class="left carousel-control hidden-xs" href="#carousel-slider" data-slide="prev">
@@ -486,5 +515,55 @@
 	<script src="js/wow.min.js"></script>
 	<script src="js/jquery.easing.min.js"></script>	
 	<script src="js/main.js"></script>
+
+	<style type="text/css">
+	/*	body {
+  font-family: sans-serif;
+  margin: 50px;
+}
+*/
+h1 {
+  animation: move 3s;
+  -webkit-animation: move 3s;
+}
+
+@keyframes move {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+            
+@-webkit-keyframes move {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+
+
+/*body,html{margin:0;padding:0;height:100%;}*/
+body{
+  background:url('https://farm9.staticflickr.com/8760/17195790401_ceeeafcddb_o.jpg');
+  background-size:cover;
+  font-family: 'Cabin Condensed', sans-serif;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+svg{font-weight:bold;max-width:600px;height:auto;}
+	</style>
   </body>
 </html>
