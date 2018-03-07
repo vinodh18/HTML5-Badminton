@@ -7,8 +7,8 @@ body {
     height: 100%;
     font-family: 'Ek Mukta', sans-serif;
 	font-weight: 300;
-    color: unset;
-    background-color: #fff;
+    color: white;
+    background-color: black;
 	font-size: 16px;
     line-height: 1.6em;
 	font-weight: 400;
@@ -196,7 +196,7 @@ p {
   margin-top: 0;
   margin-bottom: 10px;
   text-align:center;
-  color:#000;
+  color:white;
   text-transform:uppercase;
 }
 
